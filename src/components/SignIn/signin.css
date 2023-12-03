@@ -1,0 +1,36 @@
+body{
+    margin: 0!important;
+}
+section{
+    background: linear-gradient(180deg, rgb(43, 55, 63), rgb(52, 109, 140), rgb(43, 122, 165));
+    width: 100%;
+    height: 100vh;
+}
+#conteneder-form-registro{
+    background-color: rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#irLogin{
+    width: 100%;
+    height: 8vh!important;
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center;
+}
+#conteneder-form-registro>div{
+    width: 50vh;
+    height: 85vh;
+    color: white;
+    background-color: rgb(33, 41, 49);
+    border-radius: 15px;
+}
+
+#conteneder-form-registro>div>div{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
