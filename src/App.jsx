@@ -3,7 +3,6 @@ import { HashRouter as BrowserRouter, Routes, Route } from "react-router-dom"
 import {Login} from '../src/components/Login/Login'
 import {SignIn} from '../src/components/SignIn/SignIn' 
 import { Wall } from "../src/components/Wall/Wall"
-import { Posts } from "../src/components/Post/Posts"
 import axios from "axios"
 
 function App() {
@@ -33,8 +32,7 @@ function App() {
         {  inicioSesion ? (<Route path="/"  element={<Wall/>}/ >) :  
                           <Route path="/" element ={<Login prop1 = {setInicioSesion}  />} /> }
         <Route path="/crearUsuario" element ={<SignIn/>}></Route>
-        { inicioSesion ?  (<Route path="/crearPost" element ={<Posts infoUsuario = {inicioSesionInfo} />} />) : <></> }
-        { inicioSesion ? (<Route path="/wall" element ={<Wall/>} />) :<></> }
+        { inicioSesion ? (<Route path="/wall" element ={<Wall infoUsuario = {inicioSesionInfo}/>} />) :<></> }
       </Routes>
     </BrowserRouter>
   </>

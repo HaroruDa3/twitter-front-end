@@ -54,12 +54,12 @@ export const SignIn = () => {
     <div id='conteneder-form-registro'>
         <div >
             <div id='irLogin'>
-                <svg xmlns="http://www.w3.org/2000/svg" onClick={goToLogin} type='button' class="icon icon-tabler icon-tabler-arrow-narrow-left mx-4" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M5 12l14 0" />
-                    <path d="M5 12l4 4" />
-                    <path d="M5 12l4 -4" />
-                </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" onClick={goToLogin} type='button' className="icon icon-tabler icon-tabler-arrow-narrow-left mx-4" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 12l14 0" />
+                <path d="M5 12l4 4" />
+                <path d="M5 12l4 -4" />
+            </svg>
             </div>
             <div>
                 <img className='h-100' src={LogoTwitter} alt="" />
@@ -67,19 +67,19 @@ export const SignIn = () => {
             <h3 className='text-center fw-bold'>Registro</h3>
 
             <form className='w-100 d-flex flex-column mt-3 align-items-center' onSubmit={handleSubmit}>
-                <div class="form-group w-75">
-                    <label className='mb-1' for="username">Usuario:</label>
-                    <input type="text" class="form-control" name = "user_name" onChange={onHandleChange} required/>
+                <div className="form-group w-75">
+                    <label className='mb-1' >Usuario:</label>
+                    <input type="text" className="form-control" name = "user_name" onChange={onHandleChange} required/>
                 </div>
-                <div class="form-group w-75">
-                    <label className='mb-1' for="username">Correo Electronico:</label>
-                    <input type="email" class="form-control" name = "email" onChange={onHandleChange} required/>
+                <div className="form-group w-75">
+                    <label className='mb-1' >Correo Electronico:</label>
+                    <input type="email" className="form-control" name = "email" onChange={onHandleChange} required/>
                 </div>
-                <div class="form-group w-75 mb-3">
-                    <label className='mb-1' for="password">Contraseña:</label>
-                    <input type="password" class="form-control"  name="pass"  onChange={onHandleChange} required/>
+                <div className="form-group w-75 mb-3">
+                    <label className='mb-1' >Contraseña:</label>
+                    <input type="password" className="form-control"  name="pass"  onChange={onHandleChange} required/>
                 </div>
-                <button type="submit" class="btn btn-primary w-75">Entrar</button>
+                <button type="submit" className="btn btn-primary w-75">Entrar</button>
             </form>
         </div>
     </div>

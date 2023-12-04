@@ -1,0 +1,44 @@
+body{
+    margin: 0!important;
+    background: linear-gradient(180deg, rgb(38, 48, 55), rgb(39, 72, 90), rgb(35, 99, 134));
+}
+
+#contenedor-info{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.484);
+}
+#navbar{
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    position: fixed;
+    background-color: #182730;
+}
+.twitt{
+    background-color: rgba(0, 0, 0, 0.256);
+    padding: 10px;
+    border: solid 2px black;
+    color: white;
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.space{
+    height: 17vh;
+    margin-bottom: 25px;
+}
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    padding: 10px;
+}
+.icono{
+    
+    height: 100%;
+    width: 7vh;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
