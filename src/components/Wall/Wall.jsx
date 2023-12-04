@@ -44,7 +44,6 @@ export const Wall = ({ infoUsuario }) => {
     try {
       const url = 'http://localhost:3000/api/posts';
       const result = await axios.post(url, datoFormulario, { withCredentials: true });
-      console.log(result);
       if (result.status === 200) {
         Swal.fire({
           title: 'POST EXITOSO',

@@ -33,9 +33,6 @@ export const SignIn = () => {
         const result = await axios.post(url, formData);
         const data = (await result).data;
 
-        console.log(data);
-        
-
         if(data.status==200){
             Swal.fire({
               title: 'REGISTRO EXITOSO',
@@ -46,7 +43,6 @@ export const SignIn = () => {
               }
             });
         }
-
     }
 
   return (
